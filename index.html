@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wish journey</title>
+    <style>
+      /* Define styles for light mode */
+      body {
+        background-color: #fff;
+        color: #333;
+      }
+
+      /* Define styles for dark mode */
+      .dark-mode body {
+        background-color: #333;
+        color: #fff;
+      }
+    </style>
+
+    <!-- Fonts -->
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">wish<span>journey</span></a>
+      <img src="images/logo.png" alt="Logo" />
+
+      <div class="navbar-nav">
+        <a href="#">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#Contact">Contact Us</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="instagram"><i data-feather="instagram"></i></a>
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <label for="toggle-switch">Toggle Dark Mode</label>
+    <input type="checkbox" id="toggle-switch" />
+
+    <script>
+      feather.replace();
+    </script>
+
+    <script>
+      const toggleSwitch = document.querySelector("#toggle-switch");
+
+      toggleSwitch.addEventListener("change", function () {
+        document.documentElement.classList.toggle("dark-mode");
+      });
+    </script>
+  </body>
+</html>
